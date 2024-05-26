@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <!-- bootstrap 5 cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- custom style sheet css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--
+        ------ -> DOM Manipulation project <- ------
+                Author:     ->>-> Masab Ashraf
+        Languages used:     ->>-> HTML5
+                                  CSS3
+                                  Bootstrap5
+                                  JavaScript
+    -->
+</head>
+
+<body id="body">
+    <div class="container">
+        <div id="wrapper">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <div class="row">
+                        <div
+                            class="col text-center pt-2 pb-3 border-4 border-bottom border-light rounded-top-3 form_heading">
+                            <h2>Student Registration Form</h2>
+                        </div>
+                    </div>
+                    <div class="row bg-white ps-sm-5 pe-sm-5 rounded-bottom-3 brd">
+                        <div class="col form_body" id="form_bdy">
+                            <form enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-md ps-md-0">
+                                        <label class="name_lable">First Name</label>
+                                        <input id="fName" class="input" type="text" name="text"
+                                            placeholder="Enter Your First Name">
+                                        <span id="fError"></span>
+                                    </div>
+                                    <div class="col-md pe-md-0">
+                                        <label class="name_lable">Last Name</label>
+                                        <input id="lName" class="input" type="text" name="text"
+                                            placeholder="Enter Your Last Name">
+                                        <span id="lError"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md ps-md-0">
+                                        <label class="name_lable">CNIC</label>
+                                        <input id="cnicNo" class="input" type="text" name="number"
+                                            placeholder="12345-6789012-3">
+                                        <span id="cnicError"></span>
+                                    </div>
+                                    <div class="col-md pe-md-0">
+                                        <label class="name_lable">Cell Number</label>
+                                        <input id="cellNo" class="input" type="tel" name="number"
+                                            placeholder="0110-000-1111">
+                                        <span id="cnError"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md ps-md-0">
+                                        <label class="name_lable">Date of Birth</label>
+                                        <input id="bDate" class="input" type="date" name="number">
+                                        <span id="dError"></span>
+                                    </div>
+                                    <div class="col-md pe-md-0">
+                                        <label class="name_lable ">Email</label>
+                                        <input id="eMail" class="input" type="email" name="email"
+                                            placeholder="Enter Your Email">
+                                        <span id="emailError"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md ps-md-0" style="display: inline-block;">
+                                        <label class="name_lable">Choose Program</label>
+                                        <select id="programs" class="input" name="program">
+                                            <option selected hidden disabled value="">-- Select Programs --</option>
+                                            <optgroup label="Bachelor in Science">
+                                                <option value="cs">BS Computer Science</option>
+                                                <option value="chemistry">BS Chemistry</option>
+                                            </optgroup>
+                                            <optgroup label="Master in Science">
+                                                <option value="msMath">MS Math</option>
+                                                <option value="mscs">MS CS</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="col-md pe-md-0" style="display: inline-block;">
+                                        <label class="name_lable" id="labelSubjt">Select Subjects</label>
+                                        <select id="subjects" class="input" name="program">
+                                            <option selected hidden value="Choose Subjects" id="chooseSub">-- Choose Subjects -- </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="row">
+                                            <div class="col-md ps-md-0 mt-md-1">
+                                                <label class=" name_lable sub_btn">Choose Image</label>
+                                                <input id="img_file" class="input1 form-control" accept="image/*"
+                                                    type="file">
+                                                <p class="file-info"></p>
+
+                                            </div>
+                                            <div class="col-md pe-md-0 me-lg-4 mt-2 mt-md-5">
+                                                <div id="img_preview" class="input1">
+                                                    <span id="img_spn">Image Preview</span>
+                                                </div>
+                                                <span id="img_Error"></span>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="frm"
+                                        class="col-lg ps-md-0 ms-lg-1 pe-md-0 mt-4 mt-lg-5 name_lable sub_btn">
+                                        <input id="submit" class="btn input1 fw-bold subUp" type="button" name="button"
+                                            value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-4 text-center">
+                    <h1 style="color: green;">Data Preview</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-10 offset-md-1 mt-1 p-0">
+                    <table id="main_table" class="table">
+                        <tr id="tableRow0">
+                            <th style="width: 12%;">SR NO.</th>
+                            <th>LABEL</th>
+                        </tr>
+                        <tr id="tableRow1">
+                            <th>1</th>
+                            <th>FIRST NAME</th>
+                        </tr>
+                        <tr id="tableRow2">
+                            <th>2</th>
+                            <th>LAST NAME</th>
+                        </tr>
+                        <tr id="tableRow3">
+                            <th>3</th>
+                            <th>CNIC</th>
+                        </tr>
+                        <tr id="tableRow4">
+                            <th>4</th>
+                            <th>CELL NUMBER</th>
+                        </tr>
+                        <tr id="tableRow5">
+                            <th>5</th>
+                            <th>EMAIL</th>
+                        </tr>
+                        <tr id="tableRow6">
+                            <th>6</th>
+                            <th>Programs</th>
+                        </tr>
+                        <tr id="tableRow7">
+                            <th>7</th>
+                            <th>REG ID</th>
+                        </tr>
+                        <tr id="tableRow8">
+                            <th>8</th>
+                            <th>IMAGE</th>
+                        </tr>
+                        <tr id="tableRow9">
+                            <th>9</th>
+                            <th>DELETE</th>
+                        </tr>
+                        <tr id="tableRow10">
+                            <th>10</th>
+                            <th>EDIT</th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
