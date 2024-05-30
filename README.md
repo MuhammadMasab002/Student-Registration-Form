@@ -29,10 +29,15 @@ You can view a live preview of the project here: [Student Registration Form Live
 
 Here are some screenshots of the project:
 
-![Screenshot 1]: ![1](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/83af488b-409a-4fda-8e92-0242782e4a3e)
-![Screenshot 2]: ![2](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/e8d09d93-78ed-44ac-8c71-278b16770e6b)
-![Screenshot 3]: ![3](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/3c7d3a94-2d63-49e3-8495-66ee6375a28b)
-![Screenshot 4]: ![4](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/aa81ef77-bdd4-4bf7-99be-d3fe64a54e3a)
+## [Screenshot 1]
+![1](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/83af488b-409a-4fda-8e92-0242782e4a3e)
+## [Screenshot 2]
+![2](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/e8d09d93-78ed-44ac-8c71-278b16770e6b)
+## [Screenshot 3]
+![3](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/3c7d3a94-2d63-49e3-8495-66ee6375a28b)
+## [Screenshot 4]
+![4](https://github.com/MuhammadMasab002/Student-Registration-Form/assets/121292086/462f39bc-f792-44b7-9f2a-db5a9e68c78d)
+
 
 ## Repository Contents
 
